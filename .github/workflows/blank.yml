@@ -19,4 +19,4 @@ jobs:
        run: docker -v
 
      - name: Install Python
-       run: apt get install python -y
+       run: python -y
