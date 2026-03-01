@@ -14,3 +14,9 @@ jobs:
 
      - name: say hello to username
        run: echo "Hello $USER"
+
+     - name: version 0f docker
+       run: docker -v
+
+     - name: Install Python
+       run: apt get install python -y
