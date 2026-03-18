@@ -11,6 +11,6 @@ jobs:
       - name: say bye
         run: echo "Bye world!"
       - name: say welcome
-        run: echo $username    
+        run: echo $user   
       
   
