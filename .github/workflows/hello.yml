@@ -9,5 +9,7 @@ jobs:
     steps:
       - name: say hello
         run: echo "Hello world!"
+      - name: say bye
+        run: echo "Bye world!"
       
   
