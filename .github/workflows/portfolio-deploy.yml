@@ -10,14 +10,18 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    #environment:
+    #  name: github-pages
+     # url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup
         uses: actions/configure-pages@v4
+        with:
+          enablement: true
+          # token must have pages:write permission; GITHUB_TOKEN may not be enough in org repos.
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload static files
         uses: actions/upload-pages-artifact@v4
       - name: Deploy to GitHub Pages
