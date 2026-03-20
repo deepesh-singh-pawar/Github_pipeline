@@ -6,15 +6,12 @@
 <title>Deepesh | DevOps Engineer</title>
 
 <style>
-
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: 'Segoe UI', sans-serif;
     background: #020617;
@@ -56,11 +53,10 @@ nav a {
     color: #38bdf8;
 }
 
-/* Typing text */
 .typing {
-    font-size: 1.5rem;
-    color: #94a3b8;
+    font-size: 1.4rem;
     margin-top: 10px;
+    color: #94a3b8;
 }
 
 /* Sections */
@@ -102,7 +98,7 @@ section {
     font-weight: bold;
 }
 
-/* Fade animation */
+/* Animation */
 .fade {
     opacity: 0;
     transform: translateY(40px);
@@ -120,7 +116,6 @@ footer {
     padding: 20px;
     background: #020617;
 }
-
 </style>
 </head>
 
@@ -144,8 +139,9 @@ footer {
 <section id="about" class="fade">
     <h2>About Me</h2>
     <p>
-        DevOps Engineer passionate about automation, cloud, and scalable systems.
-        I work with Docker, Kubernetes, and CI/CD pipelines.
+        DevOps Engineer with strong hands-on experience in containerization,
+        CI/CD pipelines, and cloud-native technologies. Skilled in building scalable
+        and automated systems using modern DevOps tools.
     </p>
 </section>
 
@@ -156,7 +152,9 @@ footer {
         <div class="card">Docker</div>
         <div class="card">Kubernetes</div>
         <div class="card">GitHub Actions</div>
-        <div class="card">AWS</div>
+        <div class="card">Nginx</div>
+        <div class="card">MySQL</div>
+        <div class="card">Linux</div>
     </div>
 </section>
 
@@ -164,22 +162,39 @@ footer {
 <section id="projects" class="fade">
     <h2>Projects</h2>
     <div class="cards">
+
         <div class="card">
-            <h3>3-Tier App</h3>
-            <p>Docker + MySQL + Java backend</p>
+            <h3>3-Tier Banking Application</h3>
+            <p>
+                Built a full stack application using Docker, MySQL, and backend services.
+                Implemented container networking and persistent volumes.
+            </p>
         </div>
+
         <div class="card">
             <h3>CI/CD Pipeline</h3>
-            <p>Automated using GitHub Actions</p>
+            <p>
+                Automated build and deployment using GitHub Actions.
+                Integrated Docker build and deployment to server.
+            </p>
         </div>
+
+        <div class="card">
+            <h3>Dockerized Applications</h3>
+            <p>
+                Created and optimized Dockerfiles, handled volumes,
+                networking, and multi-stage builds.
+            </p>
+        </div>
+
     </div>
 </section>
 
 <!-- CONTACT -->
 <section class="fade">
     <h2>Contact</h2>
-    <a class="btn" href="#">GitHub</a>
-    <a class="btn" href="#">Email</a>
+    <p>Email: your-email@gmail.com</p>
+    <a class="btn" href="#">GitHub Profile</a>
 </section>
 
 <footer>
@@ -188,8 +203,8 @@ footer {
 
 <script>
 
-/* Typing Effect */
-const text = ["DevOps Engineer 🚀", "Docker | Kubernetes | CI/CD", "Cloud Enthusiast ☁️"];
+/* Typing Animation */
+const text = ["DevOps Engineer 🚀", "Docker | Kubernetes | CI/CD", "Cloud & Automation Enthusiast"];
 let i = 0, j = 0, currentText = "", isDeleting = false;
 
 function type() {
