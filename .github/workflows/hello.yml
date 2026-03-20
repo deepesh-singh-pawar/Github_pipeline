@@ -1,7 +1,6 @@
 name: hello workflow #workflow name
 on:
-  push:
-    branches: [ main ]
+    workflow_dispatch: #manual trigger
 jobs:
   greet:
     runs-on: ubuntu-latest
